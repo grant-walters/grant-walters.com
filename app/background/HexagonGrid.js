@@ -4,7 +4,7 @@ import {useEffect, useState} from 'react';
 function Hexagon({x,y,r,mousePos,decay,maxDist}) {
 	let distToMouse = Math.sqrt(Math.pow(x-mousePos.x,2)+Math.pow(y-mousePos.y,2));
 	let opacity= Math.exp(-decay*distToMouse/maxDist);
-	opacity = Math.max(0.05,Math.min(opacity,0.9));
+	opacity = Math.max(0.1,Math.min(opacity,0.9));
 	
 	let points = [];
 	for(let i=0;i<6;i++) {
@@ -72,7 +72,7 @@ export default function HexagonGrid({x=0,y=0,r,numRows,numCols}) {
 		key={`row:${i}`}/>);
 	}
 	return (
-		<svg className="absolute w-screen h-full -z-50 blur-sm">
+		<svg className="absolute w-screen h-full -z-50 sm:blur-sm opacity-90">
 			{rows}
 		</svg>
 	);
