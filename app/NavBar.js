@@ -1,4 +1,4 @@
-
+import Link from 'next/link';
 export default function NavBar(props){
 	let pages = props.pages;
 	return (
