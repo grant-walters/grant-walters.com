@@ -4,21 +4,21 @@ import { useEffect, useState } from 'react';
 
 export default function Heading() {
     const chars = Array.from("Grant Walters");
-    const [index,setIndex] = useState(-1);
+    const [index,setIndex] = useState(0);
 	let i=0;
 	let loop;
-    // function tick() {
-	// 	if(index>=chars.length) {
-	// 		setIndex(0);
-	// 	} else {
-	// 		setIndex(index+1);
-	// 	}
-    // }
+    function tick() {
+		if(index>=chars.length) {
+			setIndex(0);
+		} else {
+			setIndex(index+1);
+		}
+    }
 
-	// useEffect(() => {
-	// 	loop = setInterval(tick,50);
-	// 	return () => {clearInterval(loop)}
-	// })
+	useEffect(() => {
+		loop = setInterval(tick,50);
+		return () => {clearInterval(loop)}
+	})
 
     return (
         <header className="row-start-1 items-center text-center m-0 p-0">
