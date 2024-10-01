@@ -14,9 +14,7 @@ export default function Home() {
 				<NavBar pages={pages}/>
 				<div className="grid items-center justify-items-center font-[family-name:var(--font-geist-sans)]">
 					<div className="p-10 sm:w-3/4 text-md text-center border-slate-900 border-2 rounded-lg bg-slate-800/5 hover:bg-slate-700/10 transition-all duration-200">
-						Ever since I was a kid playing video games on my parent's computer, I've always been captivated by the idea of being able to create such complex interactive entertainment experiences with nothing but words. As I grew older, I started to hone in on what that passion really was.
-						Something about the ability to create something meaningful that others use or enjoy has always drawn me towards computer science, whether it's creating some simple generative art, creating games and mods for my friends and myself to experience, or creating
-						a script or program to help grow a community I am in. Now that I've gone through schooling, coupled with my own personal endeavours into computer science, I am hoping to take this passion and apply to it to a bigger cause, where I can have an impact on greater projects than just my own.
+						Ever since I was a kid playing video games on my parent's computer, I've always been captivated by the idea of being able to create such complex interactive entertainment experiences with nothing but words. As I grew older, I started to hone in on what that passion really was. Something about the ability to create something meaningful that others use or enjoy has always drawn me towards computer science, whether it's creating some simple generative art, creating games and mods for my friends and myself to experience, or creating a script or program to help grow a community I am in. Now that I've gone through schooling, coupled with my own personal endeavours into computer science, I am hoping to take this passion and apply to it to a bigger cause, where I can have an impact on greater projects than just my own.
 					</div>
 				</div>
 			</div>
